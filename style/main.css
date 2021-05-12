@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Roboto, normal;
+  min-width: 320px;
+}
+
+header {
+  height: 745px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #757575;
+  padding-top: 55px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	display: block;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+.menu-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  text-transform: uppercase;
+}
+
+#checkbox {
+  display: none;
+}
+
+.menu-hamburger {
+  display: none;
+  z-index: 2;
+}
+
+.menu a {
+  color: #fff;
+}
+
+.menu a:hover {
+	color: #000;
+}
+
+.menu li {
+	margin-right: 40px;
+}
+
+.logo {
+  width: 100px;
+}
+
+h1 {
+  font-family: Roboto, bold;
+  font-size: 32px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-text p {
+  font-size: 20px;
+}
+
+.main-text span {
+  font-size: 20px;
+}
+
+footer {
+  background-color: #757575;
+  height: 70px;
+  color: #EBEBEE;
+  font-size: 16px;
+}
+
+footer span {
+  padding-top: 25px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 14px;
+}
+
+.social-icons img {
+  height: 40px;
+  width: 40px;
+}
+
+.social-icons a {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width:1030px) {
+  header {
+    padding-top: 40px;
+  }
+  #checkbox:checked ~ #menu-background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vh;
+    height: 500vh;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  #checkbox:checked ~ .nav a .logo {
+    margin-top: 14px;
+  }
+  #checkbox:checked ~ .nav .menu-box{
+    display: flex;
+  }
+  #checkbox:checked ~ .nav div ul{
+    display: flex;
+    flex-direction: column;
+  }
+  #checkbox:checked ~ .nav div label #menu_btn{
+    display: none;
+  }
+  #checkbox:checked ~ .nav div label #menu_close_btn{
+    display: block;
+    position: fixed;
+    top: 40px;
+    right: 40px;
+  }
+  .menu-box {
+    display: none;
+  }
+
+  .menu-box {
+    background-color: #0B4F6C;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 315px;
+    padding-top: 55px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .menu {
+    justify-content: space-between;
+    align-items: center;
+    height: 260px;
+  }
+
+  .menu li{
+    margin: 0;
+  }
+
+  .menu-hamburger {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #menu_close_btn {
+    display: none;
+  }
+
+  .container {
+    padding: 0 40px;
+  }
+}

@@ -1,0 +1,133 @@
+#main_header {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 745px;
+}
+
+
+#background-video {
+  width: 100%;
+  z-index: -99;
+  top: 0;
+  position: absolute;
+  overflow: hidden;
+}
+#background-video video {
+  background-color: #0f0;
+  height: 800px;
+}
+
+
+.join {
+  margin: 226px 0;
+  max-width: 500px;
+  height: 200px;
+}
+
+.join p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+}
+
+.join-button {
+  margin: 20px auto;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  max-width: 240px;
+  padding: 15px 0;
+  background: #20BF55;
+  border-radius: 55px;
+}
+
+.join-button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.main-text-background {
+  background-color: #fff;
+}
+
+.text-list {
+  margin-top: 42px;
+  margin-bottom: 46px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.text-list span {
+  margin-bottom: 14px;
+}
+
+#main-page-eco-section {
+  background-image: url("../images/main-page-eco-power-wide.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+}
+
+.main-eco {
+  height: 800px;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+}
+
+.future-align{
+  padding-top: 390px;
+  padding-left: 53%;
+}
+
+.future-hashtags {
+  text-align: right;
+  margin-top: 250px;
+}
+
+@media only screen and (min-width:1400px) {
+  #background-video video {
+    height: unset;
+    min-height: 800px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:1030px) {
+  .join {
+    margin: 226px auto;
+  }
+}
+
+@media only screen and (max-width:790px) {
+  .future-align {
+    padding-left: 30%;
+  }
+}
+
+@media only screen and (max-width:560px) {
+  .join {
+    margin-top: 190px;
+    max-width: 360px;
+  }
+  .future-align {
+    padding-left: 15%;
+  }
+}
+
+@media only screen and (max-width:420px) {
+  #main_header {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.2)),
+    url("../images/main-page-header-background.jpg");
+  }
+  .future-align {
+    padding-left: 0;
+  }
+  .future-hashtags{
+    margin-top: 200px;
+  }
+}

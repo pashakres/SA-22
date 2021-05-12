@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ePower - Contacts</title>
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/contacts.css">
+</head>
+<body>
+  <header id="main_header">
+    <div class="container">
+      <input type="checkbox" id="checkbox">
+      <div id="menu-background"></div>
+      <div class="nav">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="ePower logo" class="logo">
+        </a>
+        <div class="menu-hamburger">
+          <label for="checkbox">
+            <img src="images/menu.svg" id="menu_btn" alt="Menu button">
+            <img src="images/menu_close.svg" id="menu_close_btn" alt="Menu button">
+          </label>
+        </div>
+        <div class="menu-box">
+          <ul class="menu">
+            <li>
+              <a href="index.html">Головна</a>
+            </li>
+            <li>
+              <a href="about.html">Про нас</a>
+            </li>
+            <li>
+              <a href="products.html">Продукція</a>
+            </li>
+            <li>
+              <a href="partner.html">Стати партнером</a>
+            </li>
+            <li>
+              <a href="contacts.html">Контакти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h1>Контакти</h1>
+      <div class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12116.573541191941!2d30.59550679452125!3d50.52505545246548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d1115e8977bd%3A0x9802eca4e417caba!2z0YPQuy4g0KDQsNC00YPQvdGB0LrQsNGPLCAzLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1618260587691!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="contacts">
+          <h2>+38(044) 338-33-53</h2>
+          <h2>+38(067) 353-87-86</h2>
+          <h2>
+            <a href="#">support@epower.ua</a>
+          </h2>
+          <p>
+            м. Київ, вул. Радунська, 3
+          </p>
+          <p>
+            Пн - Пт з 10:00 до 20:00<br>
+            Сб - Нд з 10:00 до 18:00
+          </p>
+        </div>
+      </div>
+      <div class="contact_form">
+        <h2>Форма зворотнього зв'язку.</h2>
+        <form name="form" method="get">
+        <fieldset>
+          <div class="titles">
+            <p >Ваше ім'я:</p><input class="input" name="name" type="text"/>
+          </div>
+          <div class="titles">
+            <p >Email:</p><input class="input" name="email" type="text"/>
+          </div>
+          <div class="titles">
+            <p >Тема:</p><input class="input" name="subjects" type="text"/>
+          </div>
+          <div class="titles">
+            <p >Повідомлення:</p><textarea name="message" cols="22" rows="5" /></textarea>
+          </div>
+          <div class="titles">
+            <label for="agree_chackbox"><input id="agree_chackbox" type="checkbox"/>Я згоден на обробку моїх даних</label>
+          </div>
+          <div class="titles">
+              <input id="submit" value="Надіслати" type="submit" />
+          </div>
+        </fieldset>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <span>ePower © 2021</span>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/epower_energy/" target="_blank"><img src="images/icon-instagram.png" alt="instagram"></a>
+        <a href="https://www.youtube.com/ePower_energy" target="_blank"><img src="images/icon-youtube.png" alt="youtube"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

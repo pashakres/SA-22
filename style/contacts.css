@@ -1,0 +1,93 @@
+#main_header {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.2)),
+  url("../images/contacts-page-header-background.jpg");
+}
+
+.map-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 68px;
+}
+
+.contacts {
+  width: 600px;
+}
+
+.contacts h2{
+  margin-bottom: 8px;
+}
+
+.contacts a {
+  margin: 15px 0;
+  color: #20BF55;
+}
+
+.contact_form {
+  margin-bottom: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact_form h2 {
+  margin-bottom: 20px;
+}
+
+fieldset {
+  padding: 20px 40px;
+}
+
+.titles{
+  width: 310px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titles label {
+  margin: 10px auto;
+}
+
+.titles #agree_chackbox {
+  margin-right: 10px;
+}
+
+#submit {
+  width: 310px;
+  height: 40px;
+  font-size: 18px;
+  color: #fff;
+  background: #20BF55;
+  border: none;
+  border-radius: 55px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+#submit:hover {
+  background: #000;
+}
+
+@media only screen and (max-width:1260px) {
+  .map-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .map-section iframe {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width:655px) {
+  .map-section iframe {
+    width: 100%;
+  }
+  .contacts {
+    width: unset;
+  }
+  fieldset {
+    border: 0;
+  }
+}
